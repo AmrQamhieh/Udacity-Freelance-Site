@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/signup.css">
+</head>
+
+<body>
+        <header class="head-container">
+            <div class="logo">
+                <svg role="img" class=icon viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Codefresh</title><path d="M0 2.84c1.402 2.71 1.445 5.241 2.977 10.4 1.855 5.341 8.703 5.701 9.21 5.711.46.726 1.513 1.704 3.926 2.21l.268-1.272c-2.082-.436-2.844-1.239-3.106-1.68l-.005.006c.087-.484 1.523-5.377-1.323-9.352C7.182 3.583 0 2.84 0 2.84zm24 .84c-3.898.611-4.293-.92-11.473 3.093a11.879 11.879 0 0 1 2.625 10.05c3.723-1.486 5.166-3.976 5.606-6.466 0 0 1.27-4.716 3.242-6.677zM12.527 6.773l-.002-.002v.004l.002-.002zM2.643 5.22s5.422 1.426 8.543 11.543c-2.945-.889-4.203-3.796-4.63-5.168h.006a15.863 15.863 0 0 0-3.92-6.375z"/></svg>
+                <h1><a href="../index.html">Freelance</a></h1>
+            </div>
+            <nav>
+              <ul class="navigation">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="main.html#work">Work</a></li>
+                <li><a href="main.html#freelancers">Freelancers</a></li>
+                <li><a href="main.html#contact">Contact</a></li>
+        
+        
+              </ul>
+            </nav>
+          </header>
+
+          <main>
+            <form action="">
+                <ul class="tab-menu">
+                  <li class="tab-login"><a href="login.html">Log In</a></li>  
+                  <li class="tab-signup"><a href="Signup.html">Sign Up</a></li>
+                </ul>
+
+                <div class="tab-content">
+                  <div class="center">
+
+                    <p class="sign-pargraph">Sign Up for Free!</p>
+                    <div class="first-last">
+                      <div class="input-container">
+                          <input type="text" placeholder="First Name" class="first-name" required>
+                          <svg xmlns="http://www.w3.org/2000/svg" height="22px" class="icon-profile" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                      </div>
+                      <div class="input-container">
+                          <input type="text" placeholder="Last Name" class="second-name" required>
+                          <svg xmlns="http://www.w3.org/2000/svg" height="22px" class="icon-profile" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                      </div>
+                  </div>
+
+                  <div class="email-container">
+                    <input type="email" placeholder="Email Address" class="email" required>
+                    <svg xmlns="http://www.w3.org/2000/svg" height="22px" class="icon-email" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
+                  </div>
+
+                    <div class="password-container1">
+                      <input type="password" placeholder="Enter Your Password" class="password" required>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="22px" class="icon-password" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
+
+                    </div>
+                    <div class="password-container2">
+                      
+                      <input type="password" placeholder="Confirm Your Password" class="password2" required>
+                      <svg xmlns="http://www.w3.org/2000/svg" height="22px" class="icon-password" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M240-80q-33 0-56.5-23.5T160-160v-400q0-33 23.5-56.5T240-640h40v-80q0-83 58.5-141.5T480-920q83 0 141.5 58.5T680-720v80h40q33 0 56.5 23.5T800-560v400q0 33-23.5 56.5T720-80H240Zm0-80h480v-400H240v400Zm240-120q33 0 56.5-23.5T560-360q0-33-23.5-56.5T480-440q-33 0-56.5 23.5T400-360q0 33 23.5 56.5T480-280ZM360-640h240v-80q0-50-35-85t-85-35q-50 0-85 35t-35 85v80ZM240-160v-400 400Z"/></svg>
+                    </div>
+                    
+                    <div class="started-container">
+                      <button type="button" class="get-started"><p>Get Started!</p></button> 
+
+                    </div>
+                  </div>
+
+                    <p class="or">OR</p>
+                    <div class="continue-container">
+                      <button type="button" class="continue"><svg role="img" class="google" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Google</title><path d="M12.48 10.92v3.28h7.84c-.24 1.84-.853 3.187-1.787 4.133-1.147 1.147-2.933 2.4-6.053 2.4-4.827 0-8.6-3.893-8.6-8.72s3.773-8.72 8.6-8.72c2.6 0 4.507 1.027 5.907 2.347l2.307-2.307C18.747 1.44 16.133 0 12.48 0 5.867 0 .307 5.387.307 12s5.56 12 12.173 12c3.573 0 6.267-1.173 8.373-3.36 2.16-2.16 2.84-5.213 2.84-7.667 0-.76-.053-1.467-.173-2.053H12.48z"/></svg><a href="">Continue With Google</a></button>
+                      <button type="button" class="continue"><svg role="img" class="facebook" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Facebook</title><path d="M9.101 23.691v-7.98H6.627v-3.667h2.474v-1.58c0-4.085 1.848-5.978 5.858-5.978.401 0 .955.042 1.468.103a8.68 8.68 0 0 1 1.141.195v3.325a8.623 8.623 0 0 0-.653-.036 26.805 26.805 0 0 0-.733-.009c-.707 0-1.259.096-1.675.309a1.686 1.686 0 0 0-.679.622c-.258.42-.374.995-.374 1.752v1.297h3.919l-.386 2.103-.287 1.564h-3.246v8.245C19.396 23.238 24 18.179 24 12.044c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.628 3.874 10.35 9.101 11.647Z"/></svg><a href="">Continue With Facebook</a></button>
+                    </div>
+                </div>
+            </form>
+          </main>
+</body>
+</html>

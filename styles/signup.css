@@ -1,0 +1,506 @@
+@import url('https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Radio+Canada:ital,wght@0,300..700;1,300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300..900&display=swap');
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Blinker", serif;
+    background-color: #1c1c1c;
+    box-sizing: border-box;
+} 
+
+
+.head-container {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 40px 100px;
+}
+
+
+.icon {
+    width: 30px;
+    height: 30px;
+    fill: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    transition: 0.6s ease;
+    margin-top: 3px;
+    margin-bottom: 5px;
+}
+
+.logo:hover{
+    transform: scale(1.1);
+}
+
+.logo a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+   
+}
+
+.logo a:hover{
+    color: #205792;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    transition: 0.3s ease;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #f3eeeb;
+    padding: 0 35px;
+    margin-left: 20px;
+    
+}
+
+.navigation li{
+    font-size: 20px;
+}
+
+.navigation li:hover{
+    transform: scale(1.02);
+}
+
+.navigation li a:hover{
+    color: #656fc0;
+}
+
+.hire {
+    padding: 15px;
+    background-color: #123b68;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    font-weight: bold;
+    font-size: 16px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button.hire:hover{
+    transform: scale(1.1);
+    background-color: rgb(14, 5, 65);
+}
+
+.hire a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: 100;
+    
+}
+
+.hire a:hover{
+    color: #fafafa;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.tab-menu {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.tab-menu li {
+    list-style: none;
+    background-color: #242427;
+    border: 1px solid rgb(93, 116, 117);
+    border-radius: 5px;
+    padding: 5px 83px;
+    transition: 0.6s ease;
+}
+
+.tab-menu .tab-login:hover{
+    transform: scale(1.02) translateX(-2px);
+}
+
+.tab-menu .tab-signup:hover{
+    transform: scale(1.02) translateX(2px);
+}
+
+.tab-menu li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.tab-menu li a:hover{
+    color: rgb(136, 161, 179);
+}
+
+
+.tab-content .sign-pargraph {
+    display: flex;
+    color: white;
+    justify-content: center;
+    font-size: 20px;
+}
+
+.center{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin: 0 auto;
+}
+
+.tab-content{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 700px;
+    height: 523px;
+    background-color: #1b1b1b;
+    border: 2px solid rgb(34, 40, 43);
+    border-radius: 7px;
+    box-shadow: -1px 0px 20px 0px rgb(34, 40, 44);
+    margin: 20px auto;
+}
+
+.or {
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+input{
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+
+
+input:focus{
+   outline-color: rgb(38, 73, 100);;
+}
+
+.email-container:focus-within .icon-email,
+.password-container1:focus-within .icon-password,
+.password-container2:focus-within .icon-password,
+.input-container:focus-within .icon-profile {
+    fill: rgb(25, 63, 92);
+    outline-color: rgb(38, 73, 100);
+    border: none;
+}
+
+.get-started{
+    padding: 10px;
+    width: 250px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    transition: 0.25s ease;
+    cursor: pointer;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+}
+
+.get-started p{
+    padding: 0px;
+    margin: 0px;
+    
+
+}
+
+.get-started:hover {
+    transform: scale(1.03);
+}
+
+.get-started p:hover{
+    color: rgb(25, 38, 49);
+}
+.continue-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.continue {
+    position: relative;
+    max-width: 100%;  
+    width: 220px; 
+    padding: 12px;
+    text-align: center; 
+    margin-bottom: 20px;
+    transition: 0.25s ease;
+    cursor: pointer;
+}
+
+.continue:hover{
+    transform: scale(1.02);
+    
+}
+
+.continue a {
+    text-decoration: none;
+    color: black;
+    text-align: center; 
+    font-weight: 500;
+    margin-left: 2px;
+    font-family: 'Inter', sans-serif;
+    margin-left: 20px;
+}
+
+.continue a:hover{
+    color: rgb(25, 38, 49);
+}
+
+.google{
+    position: absolute;
+    height: 21px;
+    left: 3px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    top: 10px;
+    fill:#77560f;
+}
+
+.facebook{
+    position: absolute;
+    height: 22px;
+    left: 2px;
+    top: 9px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    fill: #123b68;
+}
+
+.first-last {
+    display: flex;
+    gap: 15px;
+}
+
+.input-container {
+    position: relative;
+    display: flex;
+}
+
+
+.icon-profile {
+    position: absolute;
+    right: 0px;
+    top: 20px;
+    margin-right: 8px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    fill: rgb(77, 70, 70);
+
+}
+
+.email-container{
+    position: relative;
+    display: flex;
+}
+
+
+.email-container input{
+    width: 378px;
+}
+
+.icon-email{
+    position: absolute;
+    right: 0;
+    top: 9px;
+    margin-right: 9px;
+    fill: rgb(77, 70, 70);
+    
+}
+
+.password-container1{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    
+}
+
+.icon-password{
+    position: absolute;
+    right: 0;
+    top: 9px;
+    margin-right: 9px;
+    fill: rgb(77, 70, 70);
+    
+}
+
+.password-container2{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+@media (max-width: 860px){
+    .head-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .navigation{
+        margin-right: 50px;
+    }
+    .navigation li{
+        display: block;
+    }
+    
+    .tab-content{
+        width: 500px;
+        height: 531px;
+    }
+}
+
+@media (max-width: 624px){
+
+    .tab-content{
+        width: 450px;
+        height: 559px;
+    }
+    
+    .navigation li {
+        display: block;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 549px){
+
+    .tab-content{
+        width: 320px;
+
+    }
+    .navigation{
+        margin-right: 50px;
+        display: block;
+    }
+
+    .navigation li{
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .tab-menu{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .tab-menu li{
+        margin-bottom: 10px;
+    }
+    
+    .first-last{
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    
+    input{
+        width: 247px;
+    }
+
+    .email-container input{
+        width: 250px;
+    }
+
+    .get-started{
+        width: 100%;
+    }
+
+    .continue{
+        width: 270px;
+    }
+
+    .input-container{
+        width: 270px;
+    }
+
+    .email-container{
+        width: 270px;
+    }
+}
+
+@media (max-width: 409px){
+    .tab-content{
+        width: 74%;
+        height: 600px;
+    }
+
+    .navigation li{
+        font-size: 18px;
+    }
+
+    .center{
+        width: 93%;
+        align-items: center;
+
+    }
+
+    .first-last{
+        align-items: center;
+    }
+
+    .started-container{
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    width: 60%;
+    }
+
+    .get-started{
+        align-items: center;
+    }
+
+    input{
+        width: 180px;
+    }
+
+    .input-container{
+        width: 203px;
+    }
+
+    .email-container{
+        width: 203px;
+    }
+
+    .password-container1{
+        width: 203px;
+    }
+
+    .password-container2{
+        width: 203px;
+    }
+
+    .continue{
+        width: 200px;
+    }
+
+    .continue a{
+        margin-left: 37px;
+    }
+}
+
+
+
+

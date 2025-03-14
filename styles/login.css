@@ -12,8 +12,8 @@ body {
 
 .head-container {
     display: flex;
-    justify-content: center; 
-    align-items: center; 
+    justify-content: center;
+    align-items: center;
     padding: 40px 100px;
 }
 
@@ -48,9 +48,9 @@ body {
 
 .navigation {
     display: flex;
-    justify-content: center;
     list-style: none;
     transition: 0.3s ease;
+    justify-content: center;
 }
 
 .navigation a {
@@ -107,6 +107,7 @@ form {
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 781px;
 }
 
 .tab-menu {
@@ -149,6 +150,7 @@ form {
     color: white;
     justify-content: center;
     font-size: 20px;
+    margin-bottom: 30px;
 }
 
 .center{
@@ -162,7 +164,7 @@ form {
     display: flex;
     flex-direction: column;
     padding: 30px;
-    width: 600px;
+    width: 526px;
     height: auto;
     background-color: #1b1b1b;
     border: 2px solid rgb(34, 40, 43);
@@ -196,14 +198,15 @@ input:focus{
 
 .get-started{
     padding: 10px;
-    width: 250px;
-    margin: 0 auto;
+    width: 158px;
+    margin: 6px auto;
     display: flex;
     justify-content: center;
     transition: 0.25s ease;
     cursor: pointer;
     font-family: 'Inter', sans-serif;
     font-weight: 500;
+    width: 100%;
 }
 
 .get-started p{
@@ -232,6 +235,7 @@ input:focus{
     width: 220px; 
     padding: 12px;
     text-align: center; 
+    margin-left: 5px;
     margin-bottom: 20px;
     transition: 0.25s ease;
     cursor: pointer;
@@ -293,16 +297,24 @@ input:focus{
 .email-container{
     position: relative;
     display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .email-container input{
-    width: 378px;
+    width: 309px;
+}
+
+.label-email {
+    color: #f3eeeb;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
 .icon-email{
     position: absolute;
     right: 0;
-    top: 9px;
+    top: 32px;
     margin-right: 9px;
     fill: rgb(77, 70, 70);
 }
@@ -311,12 +323,21 @@ input:focus{
     display: flex;
     flex-direction: column;
     position: relative;
+    align-items: center;
+}
+.password-container1 input{
+    width: 309px;
+}
+.label-password {
+    color: #f3eeeb;
+    font-size: 14px;
+    margin-bottom: 8px;
 }
 
 .icon-password{
     position: absolute;
     right: 0;
-    top: 9px;
+    top: 30px;
     margin-right: 9px;
     fill: rgb(77, 70, 70);
 }
@@ -334,15 +355,14 @@ input:focus{
 
     .tab-content{
         width: 500px;
-        height: 400px;
+        height: 452px;
     }
 }
 
 @media (max-width: 624px){
-
     .tab-content{
         width: 450px;
-        height: 400px;
+        height: 452px;
     }
 
     .navigation li {
@@ -352,11 +372,14 @@ input:focus{
 }
 
 @media (max-width: 549px){
-
     .tab-content{
         width: 320px;
     }
     
+    .icon-password{
+        right: 1px;
+    }
+
     .navigation{
         margin-right: 50px;
         display: block;
@@ -382,7 +405,10 @@ input:focus{
     }
 
     .email-container input{
-        width: 250px;
+        width: 248px;
+    }
+    .password-container1 input{
+        width: 248px;
     }
 
     .get-started{
@@ -404,8 +430,16 @@ input:focus{
 
 @media (max-width: 409px){
     .tab-content {
-        width: 81%;
+        width: 77%;
         height: 461px;
+    }
+
+    .email-container input{
+       width: 221px;
+    }
+    
+    .password-container1 input{
+        width: 221px;
     }
 
     .navigation li {
@@ -425,8 +459,13 @@ input:focus{
         width: 60%;
     }
 
+    .started-container{
+        width: 100%;
+    }
+
     .get-started {
         align-items: center;
+        width: 250px;
     }
 
     input {
@@ -446,7 +485,7 @@ input:focus{
     }
 
     .continue{
-        width: 200px;
+        width: 250px;
     }
 
     .continue a{

@@ -114,6 +114,7 @@ form {
     align-items: center;
     justify-content: center;
     position: relative;
+    height: 1020px;
 }
 
 .tab-menu {
@@ -173,7 +174,7 @@ form {
     flex-direction: column;
     padding: 30px;
     width: 700px;
-    height: 523px;
+    height: 689px;
     background-color: #1b1b1b;
     border: 2px solid rgb(34, 40, 43);
     border-radius: 7px;
@@ -210,7 +211,7 @@ input:focus{
 .get-started{
     padding: 10px;
     width: 250px;
-    margin: 0 auto;
+    margin: 9px auto;
     display: flex;
     justify-content: center;
     transition: 0.25s ease;
@@ -289,9 +290,38 @@ input:focus{
     fill: #123b68;
 }
 
+
+.input-container,
+.email-container,
+.password-container1,
+.password-container2 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
 .first-last {
     display: flex;
-    gap: 15px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.first-last .input-container {
+    width: 100%;
+}
+
+.first-last input{
+    width: 400px;
+}
+
+.label-firstname,
+.label-lastname,
+.label-email,
+.label-password,
+.label-confirmpassword {
+    color: #f3eeeb;
+    font-size: 14px;
+    margin-bottom: 5px;
 }
 
 .input-container {
@@ -303,7 +333,7 @@ input:focus{
 .icon-profile {
     position: absolute;
     right: 0px;
-    top: 20px;
+    top: 40px;
     margin-right: 8px;
     transform: translateY(-50%);
     pointer-events: none;
@@ -318,13 +348,13 @@ input:focus{
 
 
 .email-container input{
-    width: 378px;
+    width: 400px;
 }
 
 .icon-email{
     position: absolute;
     right: 0;
-    top: 9px;
+    top: 29px;
     margin-right: 9px;
     fill: rgb(77, 70, 70);
     
@@ -340,7 +370,7 @@ input:focus{
 .icon-password{
     position: absolute;
     right: 0;
-    top: 9px;
+    top: 29px;
     margin-right: 9px;
     fill: rgb(77, 70, 70);
     
@@ -351,6 +381,62 @@ input:focus{
     flex-direction: column;
     position: relative;
 }
+
+footer {
+    background-color: #1c1c1c;
+    color: #f3eeeb;
+    padding: 40px 0;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex-basis: 30%;
+}
+
+.footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #f3eeeb;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #656fc0;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        flex-basis: auto;
+        margin-bottom: 30px;
+    }
+}
+
 
 @media (max-width: 860px){
     .head-container{
@@ -368,7 +454,7 @@ input:focus{
     
     .tab-content{
         width: 500px;
-        height: 531px;
+        height: 666px;
     }
 }
 
@@ -376,7 +462,7 @@ input:focus{
 
     .tab-content{
         width: 450px;
-        height: 559px;
+        height: 674px;
     }
     
     .navigation li {
@@ -389,11 +475,14 @@ input:focus{
 
     .tab-content{
         width: 320px;
+        height: 686px;
 
     }
     .navigation{
         margin-right: 50px;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .navigation li{
@@ -413,6 +502,10 @@ input:focus{
     .first-last{
         flex-direction: column;
         gap: 0px;
+    }
+
+    .first-last input{
+        width: 250px;
     }
 
     
@@ -444,62 +537,122 @@ input:focus{
 @media (max-width: 409px){
     .tab-content{
         width: 74%;
-        height: 600px;
+        height: 700px;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     .navigation li{
         font-size: 18px;
     }
 
-    .center{
-        width: 93%;
-        align-items: center;
-
-    }
-
     .first-last{
         align-items: center;
-    }
+    } 
 
     .started-container{
     display: flex;
     align-items: start;
     justify-content: start;
-    width: 60%;
+    width: 100%;
     }
 
     .get-started{
         align-items: center;
     }
 
-    input{
-        width: 180px;
+    .icon-email{
+        right: -4px;
+        top: 40px;
+        margin-right: 8px;
+        transform: translateY(-50%);
+
     }
 
     .input-container{
         width: 203px;
     }
 
-    .email-container{
-        width: 203px;
-    }
-
-    .password-container1{
-        width: 203px;
-    }
-
-    .password-container2{
-        width: 203px;
-    }
-
     .continue{
         width: 200px;
+        padding: 5;
+        border-radius: 10px;
     }
 
     .continue a{
         margin-left: 37px;
     }
 }
+
+@media (max-width:390px){
+
+    .center{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+
+    .input-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .email-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .password-container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .password-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-container input{
+        width: 203px;
+    }
+
+    .password-container1 input{
+        width: 203px;
+    }
+    .password-container2 input{
+        width: 203px;
+    }
+    .icon-profile{
+        right: 19px;
+    }
+    .icon-email{
+        right: 21px;
+    }
+    .first-last input{
+        width: 203px;
+    }
+    .get-started{
+        width: 50%;
+    }
+    .google{
+        top: 16px;
+        left: 14px;
+    }
+    .facebook{
+        top: 12px;
+        left: 11px;
+    }
+
+}
+
 
 
 

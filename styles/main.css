@@ -196,6 +196,15 @@ p {
     height: auto;
 }
 
+figure figcaption{
+    color: white;
+    text-align: center;
+     margin-right: 130px;
+    margin-top: 10px; 
+    margin-left: 15px;
+    font-size: 20px;
+}
+
 .pic:hover {
     transform: translate(2px);
     transform: scale(1.03);
@@ -494,8 +503,15 @@ footer {
     }
 
     .pic img {
-        width: 550px;
+        width: 430px;
         height: auto;
+    }
+
+    figure figcaption {
+        color: white;
+        text-align: center;
+        margin-left: 70px;
+        font-size: 20px;
     }
 }
 
@@ -572,6 +588,18 @@ footer {
     .navigation a {
         padding-left: 0px;
     }
+
+    .pic figure{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    figure figcaption{
+        margin-left: 129px;
+        margin-top: 20px;
+    }
+
 }
 
 
